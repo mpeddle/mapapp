@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBPHHyVOBr88rTmqHoqvyeF0E2eTI1lgiI&sensor=false&libraries=places"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="map_app.js"></script>
+<link rel="stylesheet" type="text/css" href="airport.css" />
+</head>
+
+<body>
+  <div id="container">
+  <h1>Airport Distance</h1>
+  <div id="panel">
+    <form>
+      <input id="target1" type="text" placeholder="Depart">
+      <input id="target2" type="text" placeholder="Arrive">
+      <input type="button" onclick="(submitAirports())" value="Calculate Distance">
+    </form>
+    <div id="error"></div>
+    <div id="results"></div>
+  </div>
+  <div id="map-canvas"></div>
+  </div>
+</body>
+</html>
+
